@@ -5,13 +5,14 @@ from tkinter import messagebox
 # Game choices
 choices = {"Snake": 1, "Water": 0, "Gun": -1}
 outcomes = {
-    (1, 0): "You won! Snake drinks Water.",
-    (0, 1): "You lost! Snake drinks Water.",
-    (-1, 1): "You lost! Gun kills Snake.",
-    (1, -1): "You won! Gun kills Snake.",
-    (0, -1): "You lost! Gun sinks in Water.",
-    (-1, 0): "You won! Gun sinks in Water."
+   (1, 0): "You won! Snake drinks Water.",   
+    (0, 1): "You lost! Snake drinks Water.",  
+    (-1, 1): "You won! Gun kills Snake.",     
+    (1, -1): "You lost! Gun kills Snake.",    
+    (0, -1): "You won! Gun sinks in Water.",  
+    (-1, 0): "You lost! Gun sinks in Water."  
 }
+
 
 def play_game(user_choice):
     computer_choice = random.choice(list(choices.keys()))
